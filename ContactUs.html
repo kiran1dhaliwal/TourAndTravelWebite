@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="Styles/StyleSheet.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="Scripts/Map.js"></script>
+    <script src="Scripts/XSiteControls.js"></script>
+    <meta charset="utf-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-image: url('Images/background1.jpg');background-repeat: no-repeat;background-size:100vw 30vh ;background-color: rgba(114, 175, 206,0.5);">
+
+
+    <div id="outerDiv" style="padding-top:25px">
+        <nav id="menu" style="padding:5px 5px; margin-top:30px"></nav>
+    </div>
+
+
+    <div class="oval">
+        <h2 style="text-align:center; font-family:Cooper; color:white; padding-top:10px">FIND US</h2>
+    </div>
+
+
+    <div id="map" style="width:900px;height:300px;background:yellow;margin-top:20px;margin-left:100px;">
+        <img src="Images/mapss.png" style="width:900px;height:300px;"/>
+    </div>
+
+
+    <section class="col2" style="width:35%">
+        <p style="margin-left:120px; padding-top:0px">
+            <b>Address:</b> 83 Albert Moljak Street
+            New Zealand, 1035
+        </p>
+
+        <p style="margin-left:120px">
+            <b>Email:</b> NZadventuretours@yahoo.com
+        </p>
+
+        <p style="margin-left:120px">
+            <b>Tel:</b> 022-491-8754
+        </p>
+
+
+        <p style="margin-left:120px">
+            <b>OPENING HOURS:</b> <br />
+            Mon - Fri :  8:30 am - 10:00 pm <br />
+            Saturday : 10:00 am - 10:00 pm <br />
+            Sunday :  10:00 am - 11:00 pm
+        </p>
+
+        <img src="Images/enquiry.png" style="width:265px; height:160px; margin-left:120px"/>
+
+    </section>
+    
+
+
+    <section class="col2" style="width:65%" >
+
+            <form name="myForm" action="/action_page.php"  method="post" style="padding-right:220px">
+                <fieldset style="border:solid; border-color: rgb(13, 86, 127); padding:20px">
+
+                    Full Name:
+                    <input type="text" name="name" placeholder="Enter your Name" required>
+                    <br>
+
+                    What is your Age:
+                    <input id="numb" oninput="myFunction()" type="text" name="age" placeholder="Enter your Age" required>
+                    
+                    What is your Gender:
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other" style="margin-bottom:10px"> Other
+                    <br>
+
+                    Have you ever Experienced with us?
+                    <input type="radio" name="value" value="yes" checked> Yes
+                    <input type="radio" name="value" value="no" style="margin-bottom:10px"> No
+                    <br>
+
+                    In which adventure tour you have most interest in?
+                    <select name="type">
+                        <option value="NightAdventure">Night Adventure</option>
+                        <option value="DayAdventure">Day Adventure</option>
+                    </select>
+                    <br>
+
+                    Which is your favourite Adventure:
+                    <select name="advenures">
+                        <option value="RiverRafting">River Rafting</option>
+                        <option value="SkyDiving">Sky Diving</option>
+                        <option value="BungeeJumping">Bungee Jumping</option>
+                        <option value="StarGazing">Star Gazing</option>
+                        <option value="Skyline">Skyline</option>
+                        <option value="TeAnaGlowWorm">Te Ana Glow Worm Cave</option>
+                    </select>
+                    <br>
+
+                    Any Other Query!
+                    <input type="text" name="name" placeholder="Ask anything!!">
+                    <br>
+
+                    <div class="container" style="text-align:center">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+
+                </fieldset>
+            </form>
+    </section>
+
+
+    <section class="footer" style="margin-top:600px">
+        <ul style="padding-top:45px; padding-left:50px ">
+            <li style="display:inline-block;padding-right:70px"><p style="font-family:Cooper; color:white; font-size:x-large; text-align:left">NZ ADVENTURE<br /> TOURS</p></li>
+            <li style="display:inline-block;padding-right:70px"><p style="font-family:Cooper; color:white; font-size:x-large; text-align:center"> (c) 2018 By Kiran Dhaliwal</p></li>
+            <li style="display:inline-block;padding-right:7px"><a href="#" class="fa fa-facebook"></a></li>
+            <li style="display:inline-block;padding-right:7px"><a href="#" class="fa fa-twitter"></a></li>
+            <li style="display:inline-block;padding-right:7px"><a href="#" class="fa fa-google"></a></li>
+            <li style="display:inline-block;padding-right:7px"><a href="#" class="fa fa-youtube"></a></li>
+            <li style="display:inline-block;padding-right:7px"><a href="#" class="fa fa-instagram"></a></li>
+            <li style="display:inline-block;padding-right:7px"><a href="#" class="fa fa-pinterest"></a></li>
+            <li style="display:inline-block;padding-right:7px"><a href="#" class="fa fa-snapchat-ghost"></a></li>
+        </ul>
+    </section>
+</body>
+</html>
